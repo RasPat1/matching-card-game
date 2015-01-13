@@ -26,7 +26,7 @@ C1 U C3 = B
 C1 U C4 = C
 C2 U C3 = D
 C2 U C4 = E
-C3 u C4 = F
+C3 U C4 = F
 
 previous example 
 n = 5
@@ -63,7 +63,7 @@ THe checking process must do one comparison against each card in teh deck... So 
 Check:
 xor each pair of cards and check if the population count (Hamming weight) is 1.
 
-Number of paris to check is nC2 so n!/(2!*(n-2)!)
+Number of pairs to check is nC2 so n!/(2!*(n-2)!) which is O(n^2)
 
 Hammign weight can be calculated so speed depends on the number of 1's so [O(k)](http://blogs.msdn.com/b/jeuge/archive/2005/06/08/hakmem-bit-count.aspx). 
 
@@ -74,9 +74,16 @@ So checks are NP as well but we might be okay since decks are reasonlay small
 CHecking forves us to use a lot of wrok.  Generating a random card seems possibly horrible depending on the density of good cards. Don't do this.
 
 
-Seed with a card.  Construct a new card we know works since all possible cards are options if this does not exist we ahve failed to create a deck.  How to contrcut a  new card.
+Seed with a card.  Construct a new card we know works since all possible cards are options if this does not exist we have failed to create a deck.  How to contrcut a new card.
 
-We want some operation that takes in all the current cards and produces some card which works for all the curernt ones.  Cna't reason about it much till i find out hwo this magical operation works.
+We want some operation that takes in all the current cards and produces some card which works for all the curernt ones.  Can't reason about it much till I find out how this magical operation works.
 
+11000
+10100
+10010
+10001
 
+If you go along this path and create this deck.  No other cards can be made.  It is possible to create a bad deck.  Can't jsut do it randomly.  Have to enforce symmetry.  This has poor symmmetry (image 1 occurs 4 times while images 2-5 occur once each)
+
+There must be a method to construct a deck jus	t like we did earlier C1-C4 kinda thing.  And also I have to get around to solving this problem mathematically...  Something to do with non-euclidean spaces?
 
