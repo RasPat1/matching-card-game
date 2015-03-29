@@ -85,5 +85,4 @@ We want some operation that takes in all the current cards and produces some car
 
 If you go along this path and create this deck.  No other cards can be made.  It is possible to create a bad deck.  Can't jsut do it randomly.  Have to enforce symmetry.  This has poor symmmetry (image 1 occurs 4 times while images 2-5 occur once each)
 
-There must be a method to construct a deck jus	t like we did earlier C1-C4 kinda thing.  And also I have to get around to solving this problem mathematically...  Something to do with non-euclidean spaces?
-
+There must be a method to construct a deck just like we did earlier C1-C4 kinda thing.  And also I have to get around to solving this problem mathematically...  Something to do with non-euclidean spaces?
